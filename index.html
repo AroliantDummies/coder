@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+<head>
+<title>Coder - Aro Tools</title>
+<link rel="stylesheet" type="text/css" href="cdn/c-style.css">
+<script type="text/javascript" src="cdn/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="cdn/coder.js"></script>
+<meta charset="UTF-8"/>
+</head>
+<body>
+	<div id="mainContainer" class="mainCoder">
+		<div class="header-top">
+			<h1>Tool for Encoding and Decoding</h1>
+		</div>
+		<form name="ecoder">
+		<section class="dataBoxInspector"><label>Select a Coder</label>
+			<select class="selector" name="toolSelect">
+				<option value="url">URL Encoder / Decoder</option>
+				<option value="base64">Base64 Encoder / Decoder</option>
+				<option value="html">HTML Special Chars Encoder / Decoder</option>
+			</select><br/><br/>
+			<section class="rawData dataHolder">
+			<textarea name="toEncode" class="dataBox"></textarea>
+			</section>
+			<section class="outData  dataHolder">
+			<textarea class="dataBox" name="codedData"></textarea>
+			</section>
+			<div class="buttonHolder">
+			<button type="button" class="codeButton" onclick="code('enc');">Encode</button>
+			<button type="button" class="codeButton" onclick="code('dec');">Decode</button><br/>
+			</div>
+		</section>
+		</form>
+	</div>
+</body>
+</html>
